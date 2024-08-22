@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/base.css' %}"
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>smart_management_system</title>
+  </head>
+  <body>
+    <nav class="navbar-container">
+      <a class="navbar-link" href="{% url 'mainpage' %}">메인화면</a>
+    </nav>
+    <h1>안녕하세요</h1>
+    {% block content %} {% endblock %}
+  </body>
+</html>
